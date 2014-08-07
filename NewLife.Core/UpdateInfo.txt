@@ -141,3 +141,5 @@ v1.0.2010.1115   创建核心库
                  合并日志组件XLog
                  合并多线程组件XThread
                  合并序列化组件NewLife.Serialization
+
+				 vtony
