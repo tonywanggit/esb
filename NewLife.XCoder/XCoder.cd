@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XCoder.AutoUpdate">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="XCoder.AutoUpdate.VerFile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Network\AutoUpdate.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAQAAAAAAAAAAAAAEAAAkACAAgAAAABAA=</HashCode>
+      <FileName>Network\AutoUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XCoder.NnhyServiceTranslate">
+    <Position X="6.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Network\NnhyServiceTranslate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NewLife.ServiceLib.TranslateResult">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="NewLife.ServiceLib.TranslateResult.TextTrans" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Network\TranslateResult.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="NewLife.ServiceLib.TranslateResult.Word" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Network\TranslateResult.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="NewLife.ServiceLib.TranslateResult.Trans" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Network\TranslateResult.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="NewLife.ServiceLib.TranslateResult.SourceTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Network\TranslateResult.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Network\TranslateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewLife.ServiceLib.TranslateParams">
+    <Position X="6.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAAAAABAAEgAEAAAAAAEAAAAAABIAAACCAAAACA=</HashCode>
+      <FileName>Network\TranslateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewLife.ServiceLib.TranslateNewResult">
+    <Position X="4.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Network\TranslateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

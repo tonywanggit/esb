@@ -1,0 +1,395 @@
+﻿About ExtAspNet
+ExtJS based ASP.NET 2.0 Controls with native AJAX support and rich UI effects.
+
+ExtAspNet Mission
+Create No JavaScript, No CSS, No UpdatePanel, No ViewState and No WebServices web application.
+
+Support Browsers 
+IE 7.0+, Firefox 3.6+, Chrome 3.0+, Opera 10.5+, Safari 3.0+
+
+License
+Apache License 2.0 (Apache)
+
+Demo&Download
+http://demo.extasp.net/
+
+You can download ExtAspNet from CodePlex or install using NuGet.
+PM> Install-Package ExtAspNet
+
+
+
+Release History
+
++2012-08-18 v3.1.9
+	-Check the chinese version.
+
+
+
++2012-06-24 v3.1.8
+	-Check the chinese version.
+
+
+
++2012-06-03 v3.1.7
+	-Check the chinese version.
+
+
+
++2012-05-20 v3.1.6
+	-Check the chinese version.
+
+
+
++2012-05-06 v3.1.5
+	-Check the chinese version.
+
+
+
++2012-04-24 v3.1.4
+	-Check the chinese version.
+
+
+
++2012-04-08 v3.1.3
+	-Check the chinese version.
+
+
+
++2012-04-04 v3.1.2
+	-Check the chinese version.
+
+
+
++2012-04-02 v3.1.1
+	-Check the chinese version.
+
+
+
++2012-03-04 v3.1.0
+	-Check the chinese version.
+
+
++2012-02-05 v3.0.1
+	-Check the chinese version.
+
+
+
++2012-01-28 v3.0
+	-Check the chinese version.
+
+
+
++2011-05-09 v2.3.5
+	-Design time support for most controls.
+	-From the next verion, I will start localization strategic adjustment, and Simplied Chinese will be the official support language.
+
+
+
++2011-05-02 v2.3.4
+	-Update to extjs v3.3.3(GMz).
+	-Fix issue #9869(Pablogrind).
+	-Add CMargins for Region control - issue #9597(ronnieoverby).
+	+Fix issue #9448(tonyredondo).
+		-It's bug only exist in Tree control, we need the UniqueID for postback usage.
+	-Fix Grid sort icon display issue.
+	-Fix a bug in X.utils.updateViewState, which cause the grid basic example doesn't work when postback more than 2 times.
+
+
+
++2011-02-22 v2.3.3
+	-Update to extjs v3.3.1.
+	-Add language support to Ext.ux.TabCloseMenu(en, zh_CN, zh_TW).
+
+
+
++2010-09-29 v2.3.2
+	-Make sure there is no error when no data is binding to Grid in page's first load.
+	-Fix a bug that DataFormatString not works in Grid, for example {0:yy-MM-dd HH:mm}.
+	-Fix a bug that DataTable cann't be binded to DropDownList(RedOcean).
+	-Add language translation for Turkish(abdullaharslan).
+	-Add NullDisplayText property to BoundField control of Grid, the default value of this property is an empty string.
+	-Fix a bug in DatePicker that Text = 31/01/2010 (31 Jan 2010) will return NULL, trying to parse DateTime using it's DateFormatString(OktaEndy).
+	-Fix a bug(ComboBox in extjs v3.2.2), the getValue function will always get the first item of duplicate item text(ben.zhou).
+	-Apply patch #6593, #6621(vbelyaev).
+	-Fix a bug that Grid paging is very slow under IE7&IE6(youwei, StevenGuan, hazardvn, gavindou, ttjacky).
+	-Russian language ExtAspNet translation(vbelyaev).
+	-Construction like ToString("F2") on system with comma as decimal separator produce incorrect properties value(vbelyaev).
+	
+	
+	
++2010-06-30 v2.3.1
+	-ExtAspNet controls will on longer depends on ViewState, more than 1/4 data exchange will be saved.
+	-Enhancement for controls and examples.
+	
+
+
++2010-03-28 v2.2.1
+	+Add a overload funtion to GetAddTabReference of TabStrip that you can specify the tab's icon url(mmdcup). 
+		-Fix a bug when invoking this function through PageContext.RegisterStartupScript, the icon disappears(zhaowenke).
+	-Fix a bug in basic/hello.aspx, which can not pupop dialog in a new window.
+	-Hide the RegionPanel's border of the example site home page - ShowBorder="false".
+	+Integrate with extjs3.1.0.
+		-Add a new theme - Access.
+		-Fix a bug in firefox that page will disappear when using zoom in/out.
+		-Delete EnableLightBackgroundColor property for Panel, and EnableBackgroundColor property only support Blue and Gray themes.
+	
+	
+
++2010-01-31 v2.2.0
+	-Make ImageButton control in Asp.net has the similar behavior of Button(Ajax Submit)(261629698).
+	+Add two functions GetAddTabReference and GetRemoveTabReference to TabStrip, which are used to dynamic add Tabs.
+		-Add example tabstrip/tabstrip_addtab.aspx.
+	-Refector ExtAspNet.Examples structure, now there is only one level iframe.
+	-Add EnableTabCloseMenu property to TabStrip, which is used to enable the mouse right menu.
+	-Add DecimalPrecision property to NumberBox control(Need set the property NoDecimal="false")(zqmars).
+	-Window control updates.
+		-Click the close button of a Window control, it will not show the confirm dialog by default.
+		-GetConfirmFormModifiedHideReference is renamed to GetConfirmHideReference, and the same thing happened to other funtions.
+		-Add two property EnableConfirmOnClose(default:false), CloseAction(Hide, HideRefresh, HidePostBack).
+		-Fix a bug that prevent EnableMaximize from working in Window control.
+	-Remove SystemIcon property from Button control, now you should use Icon="SystemClose" instead of SystemIcon="Close".
+	-Set WindowPosition default to Center, not GoldenSection.
+	+The target property of Button, Window etc controls change.
+		-The type of Window Target property is changed from string to enum, don't forget to change code in aspx: Target="_self" -> Target="Self", Target="_parent" -> Target="Parent".
+		-MenuButton, LinkButton, Button, LinkButtonField ConfirmTarget Target property is changed from string to enum.
+		-Confirm.GetShowReference and Alert.GetShowReference has the similar changes.
+		-Add ValidateTarget property to MenuButton, LinkButton, Button, LinkButtonField, to control where to show the form validation failure message.
+	
+	
+
++2010-01-06 v2.1.9
+	-Integrate with extjs3.1.0.
+	-Fix css issue in gray theme.
+	-Fix a bug that Grid column cann't contain chinese characters(davidwen).
+	-Add AjaxTimeout property to Web.config and PageManager(unit:second, default:30).
+	-Fix a bug that Grid control cann't get SelectedRowIndexArray property in PageIndexChange event(Violet).
+	-Button control will not gain display:inline CSS rules auto, if you want two buttons stay in the same line, please use float:left CSS rule.
+	-Fix a bug that popup menu's position is not right in Firefox(eroach).
+	-Add EnableEdit for TriggerBox and TwinTriggerBox controls.
+	-Use Hidden property to show and hide control instead of Visible, which is a readonly property now.
+	-Use Hidden to show and hide Window control, now Popup is marked as an Obsolete property.
+	-Method GetCloseReference in Window and GetCloseReference in ActiveWindow are renamed to GetHideReference(Notice all Close character are changed to Hide).
+	-Add EnableClose property(default false), two methods GetShowReference and GetHideReference to Tab control(anson).
+	-Fix a bug that Xml document binding to Tree has a error Icon property mapping(nopnop9).
+	-Fix a bug that HtmlEditor is not editable(TheBox).
+	-Fix a bug there will be blank page under IE sometimes(olivia919).
+	
+	
+
++2009-12-06 v2.1.8
+	-Fix a serious bug in previous version, the Window with iframe can't be opened twice(alexa99).
+	-Fix a JS error of Grid control in IE(lqm4108).
+	-Fix a JS bug in Alert class(when there are quote in the message or title)(sun1299shine).
+	+Integrate with extjs3.0.3.
+		-fix an issue where MessageBox width is calculated differently depending on the previous content.
+		-Add new theme - Gray.
+	-Add change language and theme dropdown list for examples.
+	-Add static method Refresh to PageContext, which is used in changing language and theme.
+	
+	
+	
++2009-12-01 v2.1.7
+	-Add example(iframe/parent_postback_run3.aspx), how to postback parent page through simple javascript(eroach).
+	-Fix some typos(bmck).
+	-Remove SplitColor property from Region control, and add CollapseMode, EnableSplitTip, SplitTip, CollapsibleSplitTip properties(bmck).
+	-Rename BorderPanel to RegionPanel.
+	-Add MarkInvalid method for DropDownList(sun1299shine).
+	-Add example for interaction of Province-Region-Town of China(data/shengshixian.aspx)(Blues T).
+	-Fix a regression bug when changing Tab with IFrameUrl enabled will cause the page load again(eroach).
+	-Fix a bug that Grid with AutoPostBack="true", RowClick event will override other control's(LinkButtonField, HyperLinkField, CheckBoxField) click event(yymaoji).
+	
+	
+	
++2009-11-26 v2.1.6
+	+Fix a bug when dynamic create Grid's columns(gxpan).
+		-Add an example(data/grid_dynamic_columns.aspx).
+	-Fix a bug that Form cann't adaptive browser size chaneg(kaywood)(WorkItem#6309).
+	-Add an overload method Alert.Show(message, title, icon)(TheBox)(WorkItem#6353).
+	-Add AJAX property IFrameUrl for container control(such as Panel,Region,Tab etc.)(BluesT).
+	-Redesign the implement of simulate tree DropDownList, avoid flicker when select a ListItem.
+	
+		
+		
++2009-11-21 v2.1.5
+	+Tree optimize。
+		-Fix the bug that states of Expanded and Checked items cann't be persisted through page post back.
+		-GetNodeById renamed to FindNode, which is consistent with FindControl of Asp.net controls.
+		-Remove CheckedNodeIDArray property, Add GetCheckedNodes and GetCheckedNodeIDs functions.
+		-Remove ExpandedNodeIDArray property, Add GetExpandedNodes and GetExpandedNodeIDs functions.
+		-Add example(data/tree_select_run.aspx), to explain how to check all children node when a parent node is checked(wjl_wjl520).
+		+NodeId property of TreeNode renamed to NodeID, this is a convention of ExtAspNet.
+			-At the same time, In GridColumn class ColumnId renamed to ColumnID and GetColumnId renamed to GetColumnID.
+			-Grid1.Columns.FindColumnById replaced by Grid1.FindColumn function.
+		-Add Node property for the following class TreeCheckEventArgs, TreeExpandEventArgs and TreeCommandEventArgs.
+	-Add Focus(overwrite Control's Focus function) and GetFocusReference functions for all componnets.
+	-Add example other/custom_postback.aspx(thebox)。
+		-Explain a way to send a postback on a textbox when you click the enter key.
+	-Add AutoLeafIdentification property to Tree control.
+		-Add examples(tree_auto_leaf_identification.aspx)(wdrabbit)。
+	
+	
+
++2009-11-17 v2.1.4
+	-Fix a bug that Window's close button tooltip is always Chinese text(thebox).
+	-Design time support for part of ExtAspNet controls.
+	-There is a mistake in v0.2beta2 about PersistChildren(true), which is design time property, no relation to runtime state persistence.
+	-Fix a bug that CheckedChanged event of CheckBox control will be triggered twice.
+	-Add AutoPostBack property for TextBox,TextArea,DatePicker,NumberBox,TriggerBox etc.(dk3214).
+	+Add RequiredMessage,MaxLengthMessage,MinLengthMessage for form field.
+	+Add MarkInvalid and GetMarkInvalidReference for form field controls(form/form_validate.aspx).(sun1299shine).
+	
+	
+	
++2009-10-19 v2.1.3
+	+Add an AJAX properties list for all controls(/ajax.aspx).
+		-ExtAspNet support native AJAX, which not means all properties change will be relfected on the page.
+	-Load s.gif from local server, not the remote extjs.com(efrigate43,abaocoole).
+	-Ensure the asp.net button still has AJAX feature after AJAX update.
+	-Update demo /basic/login.aspx, using CAPTCHA image(kedee).
+	-Add AutoPostBack property and RowClick event for Grid(/data/grid_autopostback.aspx)(chenguizhu2006).
+	-Add AJAX property ReadOnly for all form field controls(skydb).
+	-TemplateField will have a unique ID on the page Grid, for example Grid1_ct5_Label2,Grid1_ct6_Label2(geruger).
+	
+	
+
++2009-09-27 v2.1.2
+	-Add GetExpandAllNodesReference and GetCollapseAllNodesReference to tree control.
+	-Fix the bug when loading multi-lang package in RELEASE mode(yigehaoren).
+	-Add language - pt_BR, provide by Ujvari.
+	+Add Icon property to panel control(Include Grid,Tree,Form...), which contains more than 1700 icons.
+		-If the panel has IconUrl already, then IconUrl will take effect.
+		-All the icons can be found here - icon.aspx.
+	-Add Icon property for Button,MenuItem(MenuButton,MenuHyperLink),AccordionLink,TreeNode,Image.
+	
+	
+
++2009-09-15 v2.1.1
+	-Fix a bug with AccordionPane's Items property.
+	+Add ConfirmTarget property for Controls like Button, MenuButton, LinkButton, LinkButtonField.
+		-Use this property(ConfirmTarget="_parent"), we can popup confirm dialog in parent page(Similar to Target="_parent" of Window control).
+	+Add Javascript callback function to ExtAspNet.Alert.Show when clicking the OK button.
+		-A typical scenario: Open an edit page in new window, if the url parameter is incorrect, first show an alert dialog, and then close the popup window when user click the OK button.
+		-ExtAspNet.Alert.Show("Parameter error!", String.Empty, ExtAspNet.ActiveWindow.GetCloseReference());
+	+CheckBox in the TreeNode can be clicked with server-side event.
+		-Add AutoPostBack property to TreeNode, add event data class - TreeCheckEventArgs, add NodeCheck event to Tree。
+		-Examples:http://extasp.net/data/tree_run.aspx
+	-Add GetNoSelectionAlertInParentReference function to Grid, which stands for a piece of javascript code to show an alert dialog in parent window.
+	-Fix a bug that underline character cann't be the prefix of CSS class name in IE7(Steve.Wei)。
+	-Add control Timer, which procedure an interval AJAX request to server.
+
+
+
++2009-09-04 v2.1.0
+	-Fix a bug in Button's Pressed property.
+	-Optimize the AJAX process of Tree control.
+	+Add autocomplete="off" property to form tag.
+		-Refer: http://www.cnblogs.com/sanshi/archive/2009/09/04/1560146.html#1635830
+	+Add all extjs3.0 languages to ExtAspNet.
+		-ExtAspNet has it's own extend language pack in js\languages\extaspnet, we currently support en,zh_CN,zh_TW.
+		-You can add your own language to js\languages, and don't forget to run pack.bat and rebuild the project. 
+	
+	
+	
++2009-09-01 v2.0.9
+	-Add two static functions ShowInParent and GetShowInParentReference to ExtAspNet.Alert. Now we can show dialog in parent window.
+	+You must declare control's collection property explicitly in aspx source code now, which you don't need to do so before.
+		-This will affect all of you aspx pages, please take special attention!
+		-These properties include Tabs in TabStrip, Items in PanelBase, Nodes in TreeNode etc. 
+	-Rename AccordionPanel to AccordionPane (It's a name used in Asp.net AJAX).
+	+All panels have two default collection properties - Toolbars and Items.
+		-Although TabStrip, From, Tree, Accordion inherite the Items property, but it's useless.
+		-This will affect all of you aspx pages, please separate the toolbars from the items.
+	-Happy birthday to you - xiaoshi meimei.
+
+
+
++2009-08-29 v2.0.8
+	-ExtAspNet now support mutli-languages(en,zh_CN,zh_TW), you can modify it in Web.config.
+	-Convert example application into english.
+	-Fix a bug in Tree Control with Mappings property.
+	+PageManager.Instance should exist in HttpContext.Current, not a global static parameter.
+	    -The Asp.net compatibility is ok now according to this bug fix.
+	+Remove PageManager function AddAjaxAspnetControls, Add AjaxAspnetControls property.
+	    -This property is similar to ValidateForms of Button. You can check the example in aspnet folder.
+	
+	
+
++2009-08-25 v2.0.7
+    -Add DisableControlBeforePostBack for Button(Whether to disable control before postback, default to true).
+    -You can modify Values property of Grid freely.
+    -Add example - how to export Grid to Excel(data\grid_excel_run.aspx)(503684912).
+    -Add Enabled="false" to TreeNode, this item is gray and can't be selected(your568).
+    -Fix the bug NavigateUrl of TreeNode can't accept server-side url(such as ~/default.aspx).
+    -Add example(other\accordion_tree_run.aspx).
+    -Fix the bug Icon in Panel show abnormal(class name of CSS can't contain $ character).
+    +Remove PageLayout control, instead you can use BorderLayout control and specify AutoSizePanelID property of PageManager.
+		-In this method, all Panel(No matter you are Accordion, Panel, ContentPanel, Form, GroupPanel, SimpleForm, Tree or you are Grid, TabStrip) can be full size of the viewport.
+		-Add exmples(default.aspx, other\accordion_tree_run.aspx).
+    
+    
+
++2009-08-14 v2.0.6
+	-Add exampls(other\menu_dynamic_run.aspx和other\menu_dynamic2_run.aspx)(shguo).
+	-Optimise AJAX internal implement, ViewState of each page should be much less than before.
+	-Optimise NodeId generation of TreeNode.
+	
+
+
++2009-08-09 v2.0 beta5
+	+Compatible ExtAspNet with Asp.net submit button(qianfan).
+		-We do some optimization, to make an Asp.Net button AJAX behavior, you only need to set EnableAjax="true" for PageManager control, and this is default value).
+	+Rename AddAjaxUpdateControl of PageManager control to AddAjaxAspnetControls, now you can set how many Asp.Net controls should be updated in Page_Load event.
+		-Use RemoveAjaxAspnetControls to remove the Asp.Net controls which will not be updated in AJAX request.
+		-Examples under aspnet\fckeditor_run.aspx and aspnet\aspnet_run.aspx.
+		-Compatible FCKEditor with Asp.Net upload control, add an example(aspnet\fileupload_run.aspx).
+	-Fix the bug Text of ToolbarText can't update in AJAX mode.
+	-Update Pressed property as an AJAX property of Button control(mgzhenhong).
+	-Update all examples, test under IE7.0, IE8.0, Firefox3.5, Chrome2.0.
+	
+
+
++2009-08-02 v2.0 beta4
+	+Compatible with Asp.Net Forms Authentication[mgzhenhong].
+		-Adopt the same way used in Asp.Net Ajax, we must add a httpModules section in Web.config.
+		-Support Response.Redirect, which is the same effort with ExtAspNet.PageContext.Redirect.
+		-Support FormsAuthentication.RedirectFromLoginPage(accountID, false); method.
+	-Add Type property for Button(button,reset,submit)[mgzhenhong].
+	-Fix the bug Alert.Show can't assign the icon[xmq&mgzhenhong].
+	-Fix the bug Iframe in window control can't load in the first time.
+	-Add Menu and Accordion examples.
+	-Fix the bug IconUrl of Window control disappear some times(Target="_parent")[xmq&mgzhenhong].
+	
+
+
++2009-07-22 v2.0 beta3
+	-Compatible with FCKEditor。
+	-Test under IE8.0, Firefox3.5. From now on ExtAspNet will not support IE6.0.
+	
+
+
++2009-07-13 v2.0 beta2
+	-Integrate extjs v3.0。
+	+Compatible with IE6.0,7.0,8.0。
+		-This must be an extjs3.0 bug, because Ext.QuickTips.init(); will cause the click event of button abnormal under IE6.0,7.0(IE8 works well).
+		-Now I must disable QucikTips in IE6.0, 7.0.
+	-Optimize inner JavaScript。
+	
+	
+	
++2009-07-05 v2.0 beta1
+	-Update extjs to v3.0 RC2, now there is only one theme(blue).
+	-Use YUI Compressor to compress JavaScript and CSS files.
+	-In release version, one page only contains one JavaScript file(except for language file) and one CSS file.
+	-CSS introduced by ExtAspNet will be inserted after html title tag, then custom defined styles can override ExtAspNet default style.
+	+Alert will on top of all window controls.
+		-Because I can't modify the default z-index of Ext.Message(9000), I adjust the zseed property of box.window_default_group to 6000.	
+	-Add 5px margin for all button(.x-btn button { margin: 0 5px !important; })。
+	-Because dropdownlist is not editable and can't be empty, if SelectedIndex or SelectedValue is blank, then the first item will be selected.
+	-Update component Ext.ux.SimplePagingToolbar.
+	-Update examples.
+	
+
+This project's first version is released on 2008-04-11, the previous release history is in another document(release_history_cn.txt) under this folder.
+
+	
+Copyright 2008 sanshi.ustc@gmail.com, All rights reserved.

@@ -1,0 +1,526 @@
+/*
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-family: arial,tahoma,helvetica,sans-serif;
+    font-size: 12px;
+}
+*/
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-size: 12px;
+}
+
+form
+{
+    height: 100%;
+}
+
+/*
+body {margin:0;padding:0;border:0px none;}
+html, body{height:100%;}
+form {width:100%;	height:100%;}
+*/
+
+/* override css class in ext-all.css */
+/*
+.x-item-disabled
+{
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+}
+*/
+
+/* 
+a
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #990000;
+    text-decoration: none;
+}
+a:link
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+a:active
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+ */
+
+/* elbow */
+.x-elbow
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow.gif")%>) no-repeat 0px 0px;
+}
+.x-elbow-line
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow-line.gif")%>) no-repeat 0px 0px;
+}
+.x-elbow-end
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow-end.gif")%>) no-repeat 0px 0px;
+}
+.x-elbow-empty
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow-empty.gif")%>) no-repeat 0px 0px;
+}
+
+
+/* cursor pointer */
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+
+/* gray */
+.gray
+{
+    color: gray;
+}
+
+
+/* dropdownlist can't select style */
+.x-combo-list .x-combo-list-item-disable
+{
+    background: #FFFFFF none repeat scroll 0% 0%;
+    border: 1px solid #FFFFFF !important;
+    cursor: default;
+    color: gray;
+}
+
+/* radiogroup background color */
+.x-form-radio-group .x-panel-body
+{
+    background-color: transparent;
+}
+
+
+.x-form-radio-wrap-inner
+{
+    white-space: nowrap;
+}
+
+
+/* 
+ * Ext.ux.layout.CenterLayout
+ */
+.ux-layout-center-item
+{
+    margin: 0 auto;
+    text-align: left;
+}
+.ux-layout-center .x-panel-body, /* if the container is a panel */ body.ux-layout-center
+{
+    /* if the container is the doc body (for viewport) */
+    text-align: center;
+}
+
+
+.box-accrodion-link-ul li
+{
+    margin-bottom: 2px;
+    padding: 1px 5px;
+    height: 20px;
+    border-bottom: #eee 1px solid;
+}
+
+.box-accrodion-link-ul li.box-accrodion-link-hover
+{
+    border: #ffbd69 1px solid;
+    background-image: url(<%=WebResource("ExtAspNet.res.images.accordion_link_hover2.gif")%>);
+    background-repeat: repeat-x;
+}
+.box-accrodion-link-ul li.box-accrodion-link-select
+{
+    background-image: url();
+    border: #ffb74c 1px solid;
+    background-color: #ffe6a0;
+}
+
+
+.x-btn button
+{
+    margin: 0 3px !important;
+}
+
+
+/* Fix extjs tree node icon height(original is 18px) */
+/*
+.x-tree-node-collapsed .x-tree-node-icon, .x-tree-node-expanded .x-tree-node-icon, .x-tree-node-leaf .x-tree-node-icon
+{
+    height: 16px;
+}
+*/
+
+
+/* This style defined in extjs is not that precise. */
+.x-tab-strip .x-tab-with-icon span.x-tab-strip-text
+{
+    background-position: 0 5px;
+}
+
+
+/* allow grid text selection in Firefox and WebKit based browsers */
+.x-grid-selectable .x-grid3-row td,
+.x-grid-selectable .x-grid3-summary-row td,
+.x-grid-selectable .x-grid3-cell-text,
+.x-grid-selectable .x-grid3-hd-text,
+.x-grid-selectable .x-grid3-hd,
+.x-grid-selectable .x-grid3-row
+{
+    -moz-user-select: inherit;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+}
+
+
+/* Define window container style */
+.x-window-wrapper
+{
+    
+}
+#loading-mask
+{
+    background-color: #fff;
+    height: 100%;
+    left: 0pt;
+    position: absolute;
+    top: 0pt;
+    width: 100%;
+    z-index: 20000;
+}
+
+
+#loading
+{
+    height: auto;
+    left: 45%;
+    padding: 2px;
+    position: absolute;
+    top: 40%;
+    z-index: 20001;
+}
+
+#loading .loading-indicator
+{
+    background: white none repeat scroll 0%;
+    color: #555555;
+    font-family: tahoma,arial,helvetica;
+    font-size: 13px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: auto;
+    line-height: normal;
+    margin: 0pt;
+    padding: 10px;
+    text-align: center;
+}
+
+.x-ajax-loading
+{
+    position: absolute;
+    top: 0px;
+    background-color: #F9EDBE;
+    border: 1px solid #F0C36D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: tahoma,helvetica,sans-serif;
+    color: #333;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1000000;
+    display: none;
+}
+
+.x-grid-panel .box-grid-static-checkbox
+{
+    width:100%;
+    height:16px;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-image:url(<%=WebResource("ExtAspNet.res.images.tick.png")%>);
+}
+
+.x-grid-panel .box-grid-static-checkbox.box-grid-checkbox-left
+{
+    background-position:left center;
+}
+.x-grid-panel .box-grid-static-checkbox.box-grid-checkbox-center
+{
+    background-position:center center;
+}
+.x-grid-panel .box-grid-static-checkbox.box-grid-checkbox-right
+{
+    background-position:right center;
+}
+
+
+
+.x-grid-panel .box-grid-static-checkbox-unchecked
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.bullet_cross.png")%>);
+}
+
+
+
+
+.x-grid-panel .box-grid-checkbox
+{
+    width:100%;
+    height:16px;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-image:url(<%=WebResource("ExtAspNet.res.images.checked.gif")%>);
+}
+
+.x-grid-panel .box-grid-checkbox.box-grid-checkbox-left
+{
+    background-position:left center;
+}
+.x-grid-panel .box-grid-checkbox.box-grid-checkbox-center
+{
+    background-position:center center;
+}
+.x-grid-panel .box-grid-checkbox.box-grid-checkbox-right
+{
+    background-position:right center;
+}
+
+.x-grid-panel .box-grid-checkbox-disabled
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.checked_disabled.gif")%>);
+}
+
+.x-grid-panel .box-grid-checkbox-unchecked
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.unchecked.gif")%>);
+}
+
+.x-grid-panel .box-grid-checkbox-unchecked-disabled
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.unchecked_disabled.gif")%>);
+}
+
+
+
+.x-viewport .formviewport
+{
+    border: 0 none;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+.box-panel-big-header .x-panel-header
+{
+	height:22px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+.box-panel-big-header .x-panel-header span
+{
+	line-height:22px;
+}
+.box-panel-big-header .x-panel-inline-icon
+{
+	
+}
+.box-panel-big-header .x-panel-header .x-tool
+{
+    margin-top: 3px;
+}
+
+/*
+.box-panel-big-header .x-accordion-hd
+{
+    color:#15428b;
+    font-weight:bold;
+    background:transparent url(<%=WebResource("ExtAspNet.res.theme.default.panel.white-top-bottom.gif")%>) repeat-x  0px -1px;	
+}
+
+
+.box-panel-big-header .box-accordion-hd-hover
+{
+    background:transparent url(<%=WebResource("ExtAspNet.res.images.accordion_hover.gif")%>) repeat-x 0px 0px;
+    border-bottom:1px solid #FEB145;
+}
+
+.box-panel-big-header .box-accordion-hd-select
+{
+    background:transparent url(<%=WebResource("ExtAspNet.res.images.accordion_select.gif")%>) repeat-x 0px 0px;	
+    border-bottom:1px solid #FEB145;
+}
+*/
+
+.bigfont .x-btn-text
+{
+    font-size: 12px;
+}
+
+.bigfont .x-window-header-text
+{
+    font-size: 12px;
+}
+
+.bigfont .x-window-mc
+{
+    font-size: 12px;
+}
+
+
+
+.bigfont .x-panel-header-text
+{
+    font-size: 12px;
+}
+
+
+.bigfont .x-tree-node
+{
+    font-size: 12px;
+}
+
+.bigfont .x-tab-strip span.x-tab-strip-text
+{
+    font-size: 12px;
+}
+
+
+
+
+.bigfont .x-grid3-hd-row td
+{
+    font-size: 12px;
+}
+
+.bigfont .x-grid3-row td, .bigfont .x-grid3-summary-row td
+{
+    font-size: 12px;
+}
+
+.bigfont .x-combo-list-item
+{
+    font-size: 12px;
+}
+
+.bigfont .x-toolbar td
+{
+    font-size: 12px;
+}
+
+.bigfont .x-toolbar div.xtb-text
+{
+    font-size: 12px;
+}
+
+
+
+.bigfont .x-small-editor .x-form-field
+{
+    font-size: 12px;
+}
+
+
+.bigfont .x-fieldset legend
+{
+    font-size: 12px;
+}
+
+.bigfont .x-menu-list-item
+{
+    font-size: 12px;
+}
+
+
+
+.bigfont .x-panel-mc
+{
+    font-size: 12px;
+}
+
+
+.bigfont .x-toolbar td, .bigfont .x-toolbar span, .bigfont .x-toolbar input, .bigfont .x-toolbar div, .bigfont .x-toolbar select, .bigfont .x-toolbar label
+{
+    font-size: 12px;
+}﻿/*!
+ * Ext JS Library 3.4.0
+ * Copyright(c) 2006-2011 Sencha Inc.
+ * licensing@sencha.com
+ * http://www.sencha.com/license
+ */
+/*
+ * FileUploadField component styles
+ */
+.x-form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file {
+	position: absolute;
+	right: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file-btn {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.x-form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}/*!
+ * Ext JS Library 3.4.0
+ * Copyright(c) 2006-2011 Sencha Inc.
+ * licensing@sencha.com
+ * http://www.sencha.com/license
+ */
+td.ux-grid-hd-group-cell {
+    background: url(<%=WebResource("ExtAspNet.res.theme.default.grid.grid3-hrow.gif")%>) repeat-x bottom;
+}

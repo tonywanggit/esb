@@ -1,0 +1,360 @@
+﻿[{
+    "name": "ControlBase",
+    "ajax": ["Hidden", "Enabled"],
+    "parent": "",
+    "public": false
+},
+{
+    "name": "Component",
+    "ajax": ["CssClass", "FormItemClass", "CssStyle"],
+    "parent": "ControlBase",
+    "public": false
+},
+{
+    "name": "BoxComponent",
+    "ajax": [],
+    "parent": "Component",
+    "public": false
+},
+{
+    "name": "Container",
+    "ajax": [],
+    "parent": "BoxComponent",
+    "public": false
+},
+{
+    "name": "PanelBase",
+    "ajax": ["IFrameUrl"],
+    "parent": "Container",
+    "public": false
+},
+{
+    "name": "CollapsablePanel",
+    "ajax": ["Expanded", "Collapsed", "Title"],
+    "parent": "PanelBase",
+    "public": false
+},
+{
+    "name": "Field",
+    "ajax": ["Readonly"],
+    "parent": "BoxComponent",
+    "public": false
+},
+{
+    "name": "TextField",
+    "ajax": [],
+    "parent": "Field",
+    "public": false
+},
+{
+    "name": "RealTextField",
+    "ajax": ["Text"],
+    "parent": "TextField",
+    "public": false
+},
+{
+    "name": "Toolbar",
+    "ajax": [],
+    "parent": "BoxComponent",
+    "public": true
+},
+{
+    "name": "ToolbarFill",
+    "ajax": [],
+    "parent": "Component",
+    "public": true
+},
+{
+    "name": "ToolbarSeparator",
+    "ajax": [],
+    "parent": "Component",
+    "public": true
+},
+{
+    "name": "ToolbarText",
+    "ajax": ["Text"],
+    "parent": "Component",
+    "public": true
+},
+{
+    "name": "Button",
+    "ajax": ["Text", "Icon", "IconUrl", "ToolTip", "OnClientClick", "ConfirmTitle", "ConfirmText", "ConfirmIcon", "ConfirmTarget", "Pressed"],
+    "parent": "Component",
+    "public": true
+},
+{
+    "name": "Calendar",
+    "ajax": [],
+    "parent": "Component",
+    "public": true
+},
+{
+    "name": "Menu",
+    "ajax": [],
+    "parent": "Component",
+    "public": true
+},
+{
+    "name": "BaseMenuItem",
+    "ajax": [],
+    "parent": "Component",
+    "public": false
+},
+{
+    "name": "MenuItem",
+    "ajax": [],
+    "parent": "BaseMenuItem",
+    "public": false
+},
+{
+    "name": "MenuButton",
+    "ajax": ["ClickScriptFunction"],
+    "parent": "MenuItem",
+    "public": true
+},
+{
+    "name": "MenuHyperLink",
+    "ajax": [],
+    "parent": "MenuItem",
+    "public": true
+},
+{
+    "name": "MenuSeparator",
+    "ajax": [],
+    "parent": "BaseMenuItem",
+    "public": true
+},
+{
+    "name": "MenuText",
+    "ajax": [],
+    "parent": "MenuItem",
+    "public": true
+},
+{
+    "name": "SplitButton",
+    "ajax": [],
+    "parent": "Button",
+    "public": true
+},
+{
+    "name": "PageLoading",
+    "ajax": [],
+    "parent": "ControlBase",
+    "public": true
+},
+{
+    "name": "PageManager",
+    "ajax": [],
+    "parent": "ControlBase",
+    "public": true
+},
+{
+    "name": "Timer",
+    "ajax": [],
+    "parent": "ControlBase",
+    "public": true
+},
+{
+    "name": "CheckBox",
+    "ajax": ["Checked"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "CheckBoxList",
+    "ajax": ["SelectedIndexArray", "SelectedValueArray", "SelectedItemArray"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "HtmlEditor",
+    "ajax": ["Text"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "Label",
+    "ajax": ["Text"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "HyperLink",
+    "ajax": ["Text", "NavigateUrl", "Target", "OnClientClick"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "Image",
+    "ajax": ["ImageUrl", "ImageWidth", "ImageHeight", "ImageCssClass", "ImageCssStyle", "ImageAlt"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "LinkButton",
+    "ajax": ["Text", "ConfirmText", "ConfirmTitle", "ConfirmIcon", "ConfirmTarget", "OnClientClick"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "RadioButton",
+    "ajax": ["Checked"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "RadioButtonList",
+    "ajax": ["SelectedIndex", "SelectedValue", "SelectedItem"],
+    "parent": "Field",
+    "public": true
+},
+{
+    "name": "DropDownList",
+    "ajax": ["SelectedIndex", "SelectedValue", "SelectedItem", "DataSource", "Items"],
+    "parent": "TextField",
+    "public": true
+},
+{
+    "name": "DatePicker",
+    "ajax": ["SelectedDate"],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "HiddenField",
+    "ajax": [],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "FileUpload",
+    "ajax": [],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "NumberBox",
+    "ajax": [],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "TextArea",
+    "ajax": [],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "TextBox",
+    "ajax": [],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "TriggerBox",
+    "ajax": [],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "TwinTriggerBox",
+    "ajax": ["ShowTrigger1", "ShowTrigger2"],
+    "parent": "RealTextField",
+    "public": true
+},
+{
+    "name": "RegionPanel",
+    "ajax": [],
+    "parent": "PanelBase",
+    "public": true
+},
+{
+    "name": "Region",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "Accordion",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "AccordionPane",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "AccordionLink",
+    "ajax": [],
+    "parent": "ControlBase",
+    "public": true
+},
+{
+    "name": "ContentPanel",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "Form",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "FormRow",
+    "ajax": [],
+    "parent": "ControlBase",
+    "public": true
+},
+{
+    "name": "GroupPanel",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "Panel",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "SimpleForm",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "Tree",
+    "ajax": ["Nodes", "SelectedNodeIDArray"],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "Window",
+    "ajax": [],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "Grid",
+    "ajax": ["PageIndex", "PageSize", "RecordCount", "SortColumnIndex", "SortDirection", "SelectedRowIndexArray", "DataSource"],
+    "parent": "CollapsablePanel",
+    "public": true
+},
+{
+    "name": "TabStrip",
+    "ajax": ["ActiveTabIndex"],
+    "parent": "PanelBase",
+    "public": true
+},
+{
+    "name": "Tab",
+    "ajax": [],
+    "parent": "PanelBase",
+    "public": true
+}]

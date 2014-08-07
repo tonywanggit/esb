@@ -1,0 +1,43 @@
+
+
+.box-panel-big-header .x-panel-header
+{
+	height:22px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+.box-panel-big-header .x-panel-header span
+{
+	line-height:22px;
+}
+.box-panel-big-header .x-panel-inline-icon
+{
+	
+}
+.box-panel-big-header .x-panel-header .x-tool
+{
+    margin-top: 3px;
+}
+
+/*
+.box-panel-big-header .x-accordion-hd
+{
+    color:#15428b;
+    font-weight:bold;
+    background:transparent url(<%=WebResource("ExtAspNet.res.theme.default.panel.white-top-bottom.gif")%>) repeat-x  0px -1px;	
+}
+
+
+.box-panel-big-header .box-accordion-hd-hover
+{
+    background:transparent url(<%=WebResource("ExtAspNet.res.images.accordion_hover.gif")%>) repeat-x 0px 0px;
+    border-bottom:1px solid #FEB145;
+}
+
+.box-panel-big-header .box-accordion-hd-select
+{
+    background:transparent url(<%=WebResource("ExtAspNet.res.images.accordion_select.gif")%>) repeat-x 0px 0px;	
+    border-bottom:1px solid #FEB145;
+}
+*/

@@ -1,0 +1,71 @@
+
+.x-grid-panel .box-grid-static-checkbox
+{
+    width:100%;
+    height:16px;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-image:url(<%=WebResource("ExtAspNet.res.images.tick.png")%>);
+}
+
+.x-grid-panel .box-grid-static-checkbox.box-grid-checkbox-left
+{
+    background-position:left center;
+}
+.x-grid-panel .box-grid-static-checkbox.box-grid-checkbox-center
+{
+    background-position:center center;
+}
+.x-grid-panel .box-grid-static-checkbox.box-grid-checkbox-right
+{
+    background-position:right center;
+}
+
+
+
+.x-grid-panel .box-grid-static-checkbox-unchecked
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.bullet_cross.png")%>);
+}
+
+
+
+
+.x-grid-panel .box-grid-checkbox
+{
+    width:100%;
+    height:16px;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-image:url(<%=WebResource("ExtAspNet.res.images.checked.gif")%>);
+}
+
+.x-grid-panel .box-grid-checkbox.box-grid-checkbox-left
+{
+    background-position:left center;
+}
+.x-grid-panel .box-grid-checkbox.box-grid-checkbox-center
+{
+    background-position:center center;
+}
+.x-grid-panel .box-grid-checkbox.box-grid-checkbox-right
+{
+    background-position:right center;
+}
+
+.x-grid-panel .box-grid-checkbox-disabled
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.checked_disabled.gif")%>);
+}
+
+.x-grid-panel .box-grid-checkbox-unchecked
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.unchecked.gif")%>);
+}
+
+.x-grid-panel .box-grid-checkbox-unchecked-disabled
+{
+    background-image:url(<%=WebResource("ExtAspNet.res.images.unchecked_disabled.gif")%>);
+}

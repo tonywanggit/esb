@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="ExtAspNet" type="ExtAspNet.ConfigSection, ExtAspNet"/>
+  </configSections>
+
+  <!-- 可用的配置项（这里列的都是默认值）: Language="zh_CN" AjaxTimeout="60" EnableAjax="true" Theme="blue" FormMessageTarget="qtip" FormOffsetRight="20" FormLabelWidth="100" FormLabelSeparator="：" -->
+  <ExtAspNet EnableBigFont="true" DebugMode="true" />
+
+  <appSettings/>
+  <connectionStrings/>
+
+  <system.web>
+	<!-- Net3.5以上的项目，一定要为pages节点加上这两个属性：controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID" -->
+    <pages >
+        <controls>
+            <add assembly="ExtAspNet" namespace="ExtAspNet" tagPrefix="ext"/>
+        </controls>
+    </pages>
+
+    <httpModules>
+        <add name="ExtAspNetScriptModule" type="ExtAspNet.ScriptModule, ExtAspNet"/>
+    </httpModules>
+    
+	<httpHandlers>
+        <add verb="GET" path="res.axd" type="ExtAspNet.ResourceHandler, ExtAspNet"/>
+    </httpHandlers>
+
+  </system.web>
+
+</configuration>

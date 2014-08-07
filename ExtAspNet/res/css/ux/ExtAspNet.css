@@ -1,0 +1,214 @@
+/*
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-family: arial,tahoma,helvetica,sans-serif;
+    font-size: 12px;
+}
+*/
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-size: 12px;
+}
+
+form
+{
+    height: 100%;
+}
+
+/*
+body {margin:0;padding:0;border:0px none;}
+html, body{height:100%;}
+form {width:100%;	height:100%;}
+*/
+
+/* override css class in ext-all.css */
+/*
+.x-item-disabled
+{
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+}
+*/
+
+/* 
+a
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #990000;
+    text-decoration: none;
+}
+a:link
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+a:active
+{
+    color: #5582AC;
+    text-decoration: none;
+}
+ */
+
+/* elbow */
+.x-elbow
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow.gif")%>) no-repeat 0px 0px;
+}
+.x-elbow-line
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow-line.gif")%>) no-repeat 0px 0px;
+}
+.x-elbow-end
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow-end.gif")%>) no-repeat 0px 0px;
+}
+.x-elbow-empty
+{
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(<%=WebResource("ExtAspNet.res.images.elbow-empty.gif")%>) no-repeat 0px 0px;
+}
+
+
+/* cursor pointer */
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+
+/* gray */
+.gray
+{
+    color: gray;
+}
+
+
+/* dropdownlist can't select style */
+.x-combo-list .x-combo-list-item-disable
+{
+    background: #FFFFFF none repeat scroll 0% 0%;
+    border: 1px solid #FFFFFF !important;
+    cursor: default;
+    color: gray;
+}
+
+/* radiogroup background color */
+.x-form-radio-group .x-panel-body
+{
+    background-color: transparent;
+}
+
+
+.x-form-radio-wrap-inner
+{
+    white-space: nowrap;
+}
+
+
+/* 
+ * Ext.ux.layout.CenterLayout
+ */
+.ux-layout-center-item
+{
+    margin: 0 auto;
+    text-align: left;
+}
+.ux-layout-center .x-panel-body, /* if the container is a panel */ body.ux-layout-center
+{
+    /* if the container is the doc body (for viewport) */
+    text-align: center;
+}
+
+
+.box-accrodion-link-ul li
+{
+    margin-bottom: 2px;
+    padding: 1px 5px;
+    height: 20px;
+    border-bottom: #eee 1px solid;
+}
+
+.box-accrodion-link-ul li.box-accrodion-link-hover
+{
+    border: #ffbd69 1px solid;
+    background-image: url(<%=WebResource("ExtAspNet.res.images.accordion_link_hover2.gif")%>);
+    background-repeat: repeat-x;
+}
+.box-accrodion-link-ul li.box-accrodion-link-select
+{
+    background-image: url();
+    border: #ffb74c 1px solid;
+    background-color: #ffe6a0;
+}
+
+
+.x-btn button
+{
+    margin: 0 3px !important;
+}
+
+
+/* Fix extjs tree node icon height(original is 18px) */
+/*
+.x-tree-node-collapsed .x-tree-node-icon, .x-tree-node-expanded .x-tree-node-icon, .x-tree-node-leaf .x-tree-node-icon
+{
+    height: 16px;
+}
+*/
+
+
+/* This style defined in extjs is not that precise. */
+.x-tab-strip .x-tab-with-icon span.x-tab-strip-text
+{
+    background-position: 0 5px;
+}
+
+
+/* allow grid text selection in Firefox and WebKit based browsers */
+.x-grid-selectable .x-grid3-row td,
+.x-grid-selectable .x-grid3-summary-row td,
+.x-grid-selectable .x-grid3-cell-text,
+.x-grid-selectable .x-grid3-hd-text,
+.x-grid-selectable .x-grid3-hd,
+.x-grid-selectable .x-grid3-row
+{
+    -moz-user-select: inherit;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+}
+
+
+/* Define window container style */
+.x-window-wrapper
+{
+    
+}

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFD88819-8225-47D8-91BF-422B5D6BEFF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JN.Studio</RootNamespace>
+    <AssemblyName>JN.Studio</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/JN.Studio/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LIB\DevExpress.Utils.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v9.1, Version=9.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\DatabaseExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\DatabaseExplorer.Designer.cs">
+      <DependentUpon>DatabaseExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\CodeGen.cs" />
+    <Compile Include="Core\CurrentUser.cs" />
+    <Compile Include="Core\DataSchema.cs" />
+    <Compile Include="Core\FileSource.cs" />
+    <Compile Include="Core\MdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\MdiFormManager.cs" />
+    <Compile Include="Core\XCoderBase.cs" />
+    <Compile Include="Core\XConfig.cs" />
+    <Compile Include="Dialog\FormFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FormFilter.Designer.cs">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\FormNewConn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FormNewConn.Designer.cs">
+      <DependentUpon>FormNewConn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\FormTableInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FormTableInfo.Designer.cs">
+      <DependentUpon>FormTableInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Database.Biz.cs" />
+    <Compile Include="Entity\Database.cs" />
+    <Compile Include="Entity\JNIDS\Orderdrawinfo.Biz.cs" />
+    <Compile Include="Entity\JNIDS\Orderdrawinfo.cs" />
+    <Compile Include="Entity\UserConn.Biz.cs" />
+    <Compile Include="Entity\UserConn.cs" />
+    <Compile Include="Entity\UserInfo.Biz.cs" />
+    <Compile Include="Entity\UserInfo.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiForm\FormTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdiForm\FormTable.Designer.cs">
+      <DependentUpon>FormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dialog\FormFilter.resx">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面基类ExtAspNet\MyEntityUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面基类ExtAspNet\MyEntityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面基类ExtAspNet\MyEntityForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面基类\MyEntityUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面基类\MyEntityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面基类\MyEntityForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面ExtAspNet\类名Form.aspx.cs">
+      <DependentUpon>类名Form.aspx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面ExtAspNet\类名.aspx.cs">
+      <DependentUpon>类名.aspx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面\类名Form.aspx.cs">
+      <DependentUpon>类名Form.aspx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\页面\类名.aspx.cs">
+      <DependentUpon>类名.aspx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\实体业务_增强\中文名.Biz.cs" />
+    <EmbeddedResource Include="Template\实体业务\中文名.Biz.cs" />
+    <EmbeddedResource Include="Template\实体数据\中文名.cs" />
+    <EmbeddedResource Include="Template\纯属性\中文名.cs" />
+    <EmbeddedResource Include="Template\纯属性\I中文名.cs" />
+    <EmbeddedResource Include="Control\DatabaseExplorer.resx">
+      <DependentUpon>DatabaseExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FormNewConn.resx">
+      <DependentUpon>FormNewConn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FormTableInfo.resx">
+      <DependentUpon>FormTableInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MdiForm\FormTable.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Template\实体业务\对象操作.xt" />
+    <EmbeddedResource Include="Template\实体业务\扩展查询.xt" />
+    <EmbeddedResource Include="Template\实体业务\扩展属性.xt" />
+    <EmbeddedResource Include="Template\实体业务_增强\对象操作.xt" />
+    <EmbeddedResource Include="Template\实体业务_增强\扩展查询.xt" />
+    <EmbeddedResource Include="Template\实体业务_增强\扩展属性.xt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\filter.png" />
+    <Content Include="Images\database.gif" />
+    <Content Include="Images\fk.gif" />
+    <Content Include="Images\folder.gif" />
+    <Content Include="Images\information.png" />
+    <Content Include="Images\ntDatabase.gif" />
+    <Content Include="Images\pk.gif" />
+    <Content Include="Images\refresh.gif" />
+    <Content Include="Images\delConn.gif" />
+    <Content Include="Images\newConn.gif" />
+    <Content Include="Images\refresh.bmp" />
+    <Content Include="Images\table.gif" />
+    <Content Include="Images\view.gif" />
+    <EmbeddedResource Include="Template\页面ExtAspNet\类名Form.aspx" />
+    <EmbeddedResource Include="Template\页面ExtAspNet\类名.aspx" />
+    <EmbeddedResource Include="Template\页面\类名Form.aspx" />
+    <EmbeddedResource Include="Template\页面\类名.aspx" />
+    <EmbeddedResource Include="Template\数据字典\连接名数据字典.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewLife.Core\NewLife.Core.csproj">
+      <Project>{5813C22E-EEB3-4DEE-A45C-BB218041193A}</Project>
+      <Name>NewLife.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewLife.XCode\NewLife.XCode.csproj">
+      <Project>{B49ABA5A-C5DA-45F4-87F1-B435EC51D710}</Project>
+      <Name>NewLife.XCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewLife.XTemplate\XTemplate.csproj">
+      <Project>{DA0B66DF-F5F9-4A00-8CE4-DED2AE165F02}</Project>
+      <Name>XTemplate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50D7FAE5-2304-4395-A6FA-7D35279D9D84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewLife.CommonEntity</RootNamespace>
+    <AssemblyName>NewLife.CommonEntity</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NewLife.CommonEntity.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonEntityBase.cs" />
+    <Compile Include="Common\FieldItemEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\AttachmentHttpHandler.cs" />
+    <Compile Include="Web\BadUrlFixModule.cs" />
+    <Compile Include="Web\DownloadFile.cs" />
+    <Compile Include="Web\EntityForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ExtEntityForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ExtEntityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ShowPicture.cs" />
+    <Compile Include="Web\WebPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="实体\地区.Biz.cs" />
+    <Compile Include="实体\地区.cs" />
+    <Compile Include="实体\地区.Init.cs" />
+    <Compile Include="实体\序列.Biz.cs" />
+    <Compile Include="实体\序列.cs" />
+    <Compile Include="实体\用户配置.Biz.cs" />
+    <Compile Include="实体\用户配置.cs" />
+    <Compile Include="实体\设置.Biz.cs" />
+    <Compile Include="实体\设置.cs" />
+    <Compile Include="管理和授权\日志.Biz.cs" />
+    <Compile Include="管理和授权\日志.cs" />
+    <Compile Include="管理和授权\管理员.Biz.cs" />
+    <Compile Include="管理和授权\管理员.cs" />
+    <Compile Include="实体\统计.Biz.cs" />
+    <Compile Include="实体\统计.cs" />
+    <Compile Include="管理和授权\菜单.Biz.cs" />
+    <Compile Include="管理和授权\菜单.cs" />
+    <Compile Include="管理和授权\角色.Biz.cs" />
+    <Compile Include="管理和授权\角色.cs" />
+    <Compile Include="管理和授权\角色和菜单.Biz.cs" />
+    <Compile Include="管理和授权\角色和菜单.cs" />
+    <Compile Include="实体\附件.Biz.cs" />
+    <Compile Include="实体\附件.cs" />
+    <Compile Include="管理和授权\默认后台.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.config">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UpdateInfo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\nopic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mssql_Common.xml" />
+    <Content Include="说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewLife.Core\NewLife.Core.csproj">
+      <Project>{5813C22E-EEB3-4DEE-A45C-BB218041193A}</Project>
+      <Name>NewLife.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewLife.XCode\NewLife.XCode.csproj">
+      <Project>{B49ABA5A-C5DA-45F4-87F1-B435EC51D710}</Project>
+      <Name>NewLife.XCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,71 @@
+﻿.header .title
+{
+    background-image: url(../images/logo/logo2.gif);
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.header .title a
+{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header .version
+{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.header .version a
+{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.intro
+{
+    font-family: arial,tahoma,helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+/*
+.icon_aspx
+{
+    background-image: url(../images/filetype/vs_aspx.png) !important;
+}
+.icon_txt
+{
+    background-image: url(../images/filetype/vs_txt.png) !important;
+}
+.icon_htm
+{
+    background-image: url(../images/filetype/vs_htm.png) !important;
+}
+*/
+
+
+.htoolbar
+{
+    background-image: url("../images/logo/logo2.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#logo
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    z-index: 100000;
+}

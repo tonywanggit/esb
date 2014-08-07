@@ -1,0 +1,1066 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F8BF1F6-DDC2-43DA-BB0B-416CC287AC1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExtAspNet</RootNamespace>
+    <AssemblyName>ExtAspNet</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/ExtAspNet/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Release\ExtAspNet.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LIB\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseWebControls\BoxComponent.Container.PanelBase.CollapsablePanel\CollapsablePanel.cs" />
+    <Compile Include="BaseWebControls\BoxComponent.Container.PanelBase\PanelBase.cs" />
+    <Compile Include="BaseWebControls\BoxComponent.Container\Container.cs" />
+    <Compile Include="BaseWebControls\BoxComponent.Field.TextField.RealTextField\RealTextField.cs" />
+    <Compile Include="BaseWebControls\BoxComponent.Field.TextField\TextField.cs" />
+    <Compile Include="BaseWebControls\BoxComponent.Field\Field.cs" />
+    <Compile Include="BaseWebControls\ControlBase.Component.BoxComponent\BoxComponent.cs" />
+    <Compile Include="BaseWebControls\ControlBase.Component\Component.cs" />
+    <Compile Include="BaseWebControls\ControlBase\ControlBase.cs" />
+    <Compile Include="BaseWebControls\ControlBase\ControlBaseCollection.cs" />
+    <Compile Include="BaseWebControls\ControlBase\NotAllowWhitespaceLiteralsBuilder.cs" />
+    <Compile Include="Business\AssemblyResource\img_resource.cs" />
+    <Compile Include="Business\AssemblyResource\js_css_img_resource.cs" />
+    <Compile Include="Business\Config\GlobalConfig.cs" />
+    <Compile Include="Business\Enums\CompareType.cs" />
+    <Compile Include="Business\Enums\HideMode.cs" />
+    <Compile Include="Business\Enums\Icon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\Enums\IconHelper.cs" />
+    <Compile Include="Business\Enums\Theme.cs" />
+    <Compile Include="Business\Enums\Language.cs" />
+    <Compile Include="Business\Enums\Operator.cs" />
+    <Compile Include="Business\Enums\TriggerIcon.cs" />
+    <Compile Include="Business\Enums\WindowPosition.cs" />
+    <Compile Include="Business\Enums\ToolbarPosition.cs" />
+    <Compile Include="Business\Enums\ButtonType.cs" />
+    <Compile Include="Business\Enums\CollapseMode.cs" />
+    <Compile Include="Business\Enums\Target.cs" />
+    <Compile Include="Business\Enums\RegexPattern.cs" />
+    <Compile Include="Business\Enums\CloseAction.cs" />
+    <Compile Include="Business\Enums\Position.cs" />
+    <Compile Include="Business\Enums\TabPosition.cs" />
+    <Compile Include="Business\Enums\IconAlign.cs" />
+    <Compile Include="Business\Enums\ButtonSize.cs" />
+    <Compile Include="Business\Enums\BoxLayoutAlign.cs" />
+    <Compile Include="Business\Enums\BoxLayoutPosition.cs" />
+    <Compile Include="Business\Enums\LabelAlign.cs" />
+    <Compile Include="Business\Enums\AutoPostBackTrigger.cs" />
+    <Compile Include="Business\Enums\AjaxLoadingType.cs" />
+    <Compile Include="Business\Enums\TextAlign.cs" />
+    <Compile Include="Business\JsHelper\JsArrayBuilder.cs" />
+    <Compile Include="Business\JsHelper\OptionBuilder.cs" />
+    <Compile Include="Business\ResourceManager\ClientJavascriptIDManager.cs" />
+    <Compile Include="Business\ResourceManager\DesignTimeResourceHelper.cs" />
+    <Compile Include="Business\ResourceManager\CommonResourceHelper.cs" />
+    <Compile Include="Business\ResourceManager\ResourceHandler.cs" />
+    <Compile Include="Business\ResourceManager\ResponseFilter.cs" />
+    <Compile Include="Business\ResourceManager\ScriptModule.cs" />
+    <Compile Include="Business\ResourceManager\TreeNodeIDManager.cs" />
+    <Compile Include="Business\SimulateTree\SimulateTreeHeper.cs" />
+    <Compile Include="Business\SimulateTree\SimulateTreeNode.cs" />
+    <Compile Include="Business\Util\XState.cs" />
+    <Compile Include="Business\Util\ControlUtil.cs" />
+    <Compile Include="Business\Util\StringUtil.cs" />
+    <Compile Include="Business\Util\ObjectUtil.cs" />
+    <Compile Include="Business\Util\HtmlNodeBuilder.cs" />
+    <Compile Include="Business\Util\StyleUtil.cs" />
+    <Compile Include="Business\Util\JSONUtil.cs" />
+    <Compile Include="Designer\AccordionDesigner.cs" />
+    <Compile Include="Designer\ButtonDesigner.cs" />
+    <Compile Include="Designer\CalendarDesigner.cs" />
+    <Compile Include="Designer\CheckBoxDesigner.cs" />
+    <Compile Include="Designer\CollapsablePanelDesigner.cs" />
+    <Compile Include="Designer\ContentPanelDesigner.cs" />
+    <Compile Include="Designer\ControlBaseContainerDesigner.cs" />
+    <Compile Include="Designer\ControlBaseDesigner.cs" />
+    <Compile Include="Designer\DatePickerDesigner.cs" />
+    <Compile Include="Designer\DropDownListDesigner.cs" />
+    <Compile Include="Designer\FlashObjectDesigner.cs" />
+    <Compile Include="Designer\FormDesigner.cs" />
+    <Compile Include="Designer\GridDesigner.cs" />
+    <Compile Include="Designer\GroupPanelDesigner.cs" />
+    <Compile Include="Designer\HiddenFieldDesigner.cs" />
+    <Compile Include="Designer\HtmlEditorDesigner.cs" />
+    <Compile Include="Designer\HyperLinkDesigner.cs" />
+    <Compile Include="Designer\ImageDesigner.cs" />
+    <Compile Include="Designer\LabelDesigner.cs" />
+    <Compile Include="Designer\LinkButtonDesigner.cs" />
+    <Compile Include="Designer\MenuDesigner.cs" />
+    <Compile Include="Designer\NumberBoxDesigner.cs" />
+    <Compile Include="Designer\PageLayoutDesigner.cs" />
+    <Compile Include="Designer\PageLoadingDesigner.cs" />
+    <Compile Include="Designer\PageManagerDesigner.cs" />
+    <Compile Include="Designer\PanelBaseDesigner.cs" />
+    <Compile Include="Designer\PanelDesigner.cs" />
+    <Compile Include="Designer\RadioButtonDesigner.cs" />
+    <Compile Include="Designer\RadioButtonListDesigner.cs" />
+    <Compile Include="Designer\RegionPanelDesigner.cs" />
+    <Compile Include="Designer\SimpleFormDesigner.cs" />
+    <Compile Include="Designer\SplitButtonDesigner.cs" />
+    <Compile Include="Designer\TabStripDesigner.cs" />
+    <Compile Include="Designer\TextAreaDesigner.cs" />
+    <Compile Include="Designer\TextBoxDesigner.cs" />
+    <Compile Include="Designer\TimerDesigner.cs" />
+    <Compile Include="Designer\ToolbarDesigner.cs" />
+    <Compile Include="Designer\ToolbarFillDesigner.cs" />
+    <Compile Include="Designer\ToolbarSeparatorDesigner.cs" />
+    <Compile Include="Designer\ToolbarTextDesigner.cs" />
+    <Compile Include="Designer\TreeDesigner.cs" />
+    <Compile Include="Designer\TriggerBoxDesigner.cs" />
+    <Compile Include="Designer\TwinTriggerBoxDesigner.cs" />
+    <Compile Include="Designer\UserControlConnectorDesigner.cs" />
+    <Compile Include="Designer\WindowDesigner.cs" />
+    <Compile Include="lib\HtmlAgilityPack\crc32.cs" />
+    <Compile Include="lib\HtmlAgilityPack\EncodingFoundException.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlAttribute.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlAttributeCollection.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlCmdLine.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlCommentNode.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlConsoleListener.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlDocument.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlElementFlag.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlEntity.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlNameTable.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlNode.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlNodeCollection.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlNodeNavigator.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlNodeType.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlParseError.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlParseErrorCode.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlTextNode.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlWeb.cs" />
+    <Compile Include="lib\HtmlAgilityPack\HtmlWebException.cs" />
+    <Compile Include="lib\HtmlAgilityPack\IOLibrary.cs" />
+    <Compile Include="lib\HtmlAgilityPack\MixedCodeDocument.cs" />
+    <Compile Include="lib\HtmlAgilityPack\MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="lib\HtmlAgilityPack\MixedCodeDocumentFragment.cs" />
+    <Compile Include="lib\HtmlAgilityPack\MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="lib\HtmlAgilityPack\MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="lib\HtmlAgilityPack\MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="lib\HtmlAgilityPack\NameValuePair.cs" />
+    <Compile Include="lib\HtmlAgilityPack\NameValuePairList.cs" />
+    <Compile Include="lib\JSBeautifyLib\JSBeautify.cs" />
+    <Compile Include="WebControls\BoxComponent.Toolbar\ToolbarCollection.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuCollection.cs" />
+    <Compile Include="WebControls\ControlBase.Timer\Timer.cs" />
+    <Compile Include="BaseWebControls\BoxComponent.Field\TooltipField.cs" />
+    <Compile Include="WebControls\ControlBase.UserControlConnector\UserControlConnector.cs" />
+    <Compile Include="WebControls\Field.RadioButtonList\RadioItem\RadioItem.cs" />
+    <Compile Include="WebControls\Field.RadioButtonList\RadioItem\RadioItemCollection.cs" />
+    <Compile Include="StaticClass\Confirm.cs" />
+    <Compile Include="StaticClass\ActiveWindow.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\MenuItem.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\MenuButton.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\MenuText.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\MenuSeparator.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\MenuHyperLink.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\MenuItemCollection.cs" />
+    <Compile Include="WebControls\Component.Menu\MenuItem\BaseMenuItem.cs" />
+    <Compile Include="WebControls\Component.SplitButton\SplitButton.cs" />
+    <Compile Include="WebControls\Component.Menu\Menu.cs" />
+    <Compile Include="WebControls\ControlBase.PageManager\PageManager.cs" />
+    <Compile Include="WebControls\Field.Label.Image\Image.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.FileUpload\FileUpload.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.HiddenField\HiddenField.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.TwinTriggerBox\TwinTriggerBox.cs" />
+    <Compile Include="WebControls\Field.Label.LinkButton\LinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\Field.RadioButtonList\RadioButtonList.cs" />
+    <Compile Include="WebControls\Field.RadioButton\RadioButton.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.TriggerBox\TriggerBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\PanelBase.Grid\GridGroupColumn\GridGroupColumn.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridGroupColumn\GridGroupColumnCollection.cs" />
+    <Compile Include="WebControls\PanelBase.RegionPanel\RegionPanel.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Accordion\Accordion.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Accordion\AccordionPane\AccordionPane.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Accordion\AccordionPane\AccordionPaneCollection.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\EventArgs\TreeExpandEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\EventArgs\TreeCommandEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\EventArgs\TreeCheckEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\TreeNode\TreeNode.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\TreeNode\TreeNodeCollection.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\XmlAttributeMapping\XmlAttributeMapping.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\XmlAttributeMapping\XmlAttributeMappingCollection.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Window\EventArgs\WindowCloseEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridPreRowEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridPageEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridCommandEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridRowEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridRowClickEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\LinkButtonField.cs" />
+    <Compile Include="WebControls\PanelBase.RegionPanel\Region\Region.cs" />
+    <Compile Include="WebControls\PanelBase.RegionPanel\Region\RegionCollection.cs" />
+    <Compile Include="WebControls\Component.Calendar\Calendar.cs" />
+    <Compile Include="WebControls\BoxComponent.Toolbar\Toolbar.cs" />
+    <Compile Include="WebControls\BoxComponent.Toolbar\Component.ToolbarText\ToolbarText.cs" />
+    <Compile Include="WebControls\BoxComponent.Toolbar\Component.ToolbarSeparator\ToolbarSeparator.cs">
+    </Compile>
+    <Compile Include="WebControls\BoxComponent.Toolbar\Component.ToolbarFill\ToolbarFill.cs">
+    </Compile>
+    <Compile Include="WebControls\Field.Label.HyperLink\HyperLink.cs" />
+    <Compile Include="StaticClass\PageContext.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Tree\Tree.cs" />
+    <Compile Include="Business\ResourceManager\AbsoluteScriptBlock.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.ContentPanel\ContentPanel.cs" />
+    <Compile Include="WebControls\ControlBase.PageLoading\PageLoading.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Form\Form.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Form\FormRow\FormRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Form\FormRow\FormRowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.GroupPanel\GroupPanel.cs" />
+    <Compile Include="WebControls\Field.CheckBox\CheckBox.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.SimpleForm\SimpleForm.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Window\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridSortEventArgs.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\Grid.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\BoundField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\CheckBoxField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\WindowField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\ImageField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\TemplateField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\HyperLinkField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\GridColumn.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\GridColumnCollection.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridRow\GridRowControl.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridRow\GridRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\PanelBase.Grid\GridRow\GridRowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControls\Field.TextField.DropDownList\ListItem\ListItem.cs" />
+    <Compile Include="WebControls\Field.TextField.DropDownList\ListItem\ListItemCollection.cs" />
+    <Compile Include="WebControls\Field.TextField.DropDownList\DropDownList.cs" />
+    <Compile Include="WebControls\Field.Label\Label.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.TextArea\TextArea.cs" />
+    <Compile Include="WebControls\PanelBase.TabStrip\Tab\Tab.cs" />
+    <Compile Include="WebControls\PanelBase.TabStrip\TabStrip.cs" />
+    <Compile Include="WebControls\PanelBase.CollapsablePanel.Panel\Panel.cs" />
+    <Compile Include="WebControls\Field.HtmlEditor\HtmlEditor.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.DatePicker\DatePicker.cs" />
+    <Compile Include="WebControls\PanelBase.TabStrip\Tab\TabCollection.cs" />
+    <Compile Include="Business\ResourceManager\ScriptBlock.cs" />
+    <Compile Include="Business\Enums\ButtonAlign.cs" />
+    <Compile Include="Business\Enums\Layout.cs" />
+    <Compile Include="Business\Util\ExtDateTimeConvertor.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.NumberBox\NumberBox.cs" />
+    <Compile Include="Business\Enums\MsgTarget.cs" />
+    <Compile Include="Business\Enums\TextMode.cs" />
+    <Compile Include="Business\Enums\ToolTipType.cs" />
+    <Compile Include="Business\JsHelper\JsHelper.cs" />
+    <Compile Include="StaticClass\Alert.cs" />
+    <Compile Include="Business\Enums\MessageBoxIcon.cs" />
+    <Compile Include="WebControls\Component.Button\Button.cs" />
+    <Compile Include="Business\JsHelper\JsObjectBuilder.cs" />
+    <Compile Include="Business\ResourceManager\ResourceHelper.cs" />
+    <Compile Include="Business\Config\Constants.cs" />
+    <Compile Include="WebControls\Field.TextField.RealTextField.TextBox\TextBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Business\Config\ConfigSection.cs" />
+    <Compile Include="Business\ResourceManager\ResourceManager.cs" />
+    <Compile Include="WebControls\Field.CheckBoxList\CheckBoxList.cs" />
+    <Compile Include="WebControls\Field.CheckBoxList\CheckItem\CheckItem.cs" />
+    <Compile Include="WebControls\Field.CheckBoxList\CheckItem\CheckItemCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="js\lib\json2.js" />
+    <None Include="js\lib\ext-base.js" />
+    <None Include="js\lib\Base64.js" />
+    <EmbeddedResource Include="js\ext-form.js" />
+    <EmbeddedResource Include="js\ext-grid.js" />
+    <EmbeddedResource Include="js\ext-core.js" />
+    <EmbeddedResource Include="js\ext-foundation.js" />
+    <EmbeddedResource Include="js\lang\ext-lang-ru.js" />
+    <EmbeddedResource Include="js\ext-menutabtree.js" />
+    <Content Include="js\lang\extaspnet\ext-lang-ru.js" />
+    <Content Include="js\lang\extjs\ext-lang-ru.js" />
+    <Content Include="js\pkgs\cmp-foundation.js" />
+    <Content Include="js\pkgs\data-foundation.js" />
+    <Content Include="js\pkgs\data-grouping.js" />
+    <Content Include="js\pkgs\data-json.js" />
+    <Content Include="js\pkgs\data-list-views.js" />
+    <Content Include="js\pkgs\data-xml.js" />
+    <Content Include="js\pkgs\direct.js" />
+    <Content Include="js\pkgs\ext-core.js" />
+    <Content Include="js\pkgs\ext-dd.js" />
+    <Content Include="js\pkgs\ext-foundation.js" />
+    <Content Include="js\pkgs\pkg-buttons.js" />
+    <Content Include="js\pkgs\pkg-charts.js" />
+    <Content Include="js\pkgs\pkg-forms.js" />
+    <Content Include="js\pkgs\pkg-grid-editor.js" />
+    <Content Include="js\pkgs\pkg-grid-foundation.js" />
+    <Content Include="js\pkgs\pkg-grid-grouping.js" />
+    <Content Include="js\pkgs\pkg-grid-property.js" />
+    <Content Include="js\pkgs\pkg-history.js" />
+    <Content Include="js\pkgs\pkg-menu.js" />
+    <Content Include="js\pkgs\pkg-tabs.js" />
+    <Content Include="js\pkgs\pkg-tips.js" />
+    <Content Include="js\pkgs\pkg-toolbars.js" />
+    <Content Include="js\pkgs\pkg-tree.js" />
+    <Content Include="js\pkgs\resizable.js" />
+    <Content Include="js\pkgs\state.js" />
+    <Content Include="js\pkgs\window.js" />
+    <Content Include="js\ux\Ext.ux.form.FileUploadField.js" />
+    <Content Include="js\ux\Ext.ux.grid.ColumnHeaderGroup.js" />
+    <Content Include="js\ux\Ext.ux.grid.RowExpander.js" />
+    <EmbeddedResource Include="js\x.js" />
+    <EmbeddedResource Include="js\x-debug.js" />
+    <Content Include="lib\json.net\Net20\Newtonsoft.Json.dll" />
+    <Content Include="lib\json.net\Net20\Newtonsoft.Json.xml" />
+    <Content Include="lib\json.net\Net35\Newtonsoft.Json.dll" />
+    <Content Include="lib\json.net\Net35\Newtonsoft.Json.xml" />
+    <Content Include="lib\json.net\Net40\Newtonsoft.Json.dll" />
+    <Content Include="lib\json.net\Net40\Newtonsoft.Json.xml" />
+    <Content Include="lib\licenses\json.net.txt" />
+    <Content Include="release_history_en.txt" />
+    <None Include="js\js.bat" />
+    <None Include="js\lang\pack.bat" />
+    <None Include="res\css\css.bat" />
+    <Content Include="js\lang\extaspnet\ext-lang-tr.js" />
+    <Content Include="res\css\ext\ext-all-notheme.css" />
+    <Content Include="res\css\ext\original\ext-all-notheme.css" />
+    <Content Include="res\css\ext\original\xtheme-access.css" />
+    <Content Include="res\css\ext\original\xtheme-blue.css" />
+    <Content Include="res\css\ext\original\xtheme-gray.css" />
+    <Content Include="res\css\ext\xtheme-access.css" />
+    <Content Include="res\css\ext\xtheme-blue.css" />
+    <Content Include="res\css\ext\xtheme-gray.css" />
+    <EmbeddedResource Include="res\css\gray.css" />
+    <EmbeddedResource Include="res\css\notheme.css" />
+    <Content Include="res\css\ux\BigFont.css" />
+    <EmbeddedResource Include="res\images\accordion_hover.gif" />
+    <EmbeddedResource Include="res\images\accordion_link_hover.gif" />
+    <EmbeddedResource Include="res\images\accordion_link_hover2.gif" />
+    <EmbeddedResource Include="res\images\accordion_reset.gif" />
+    <EmbeddedResource Include="res\images\accordion_select.gif" />
+    <EmbeddedResource Include="res\images\box.gif" />
+    <EmbeddedResource Include="res\images\check-back1.gif" />
+    <EmbeddedResource Include="res\images\check.gif" />
+    <EmbeddedResource Include="res\images\delete.gif" />
+    <EmbeddedResource Include="res\images\dialog-ok.gif" />
+    <EmbeddedResource Include="res\images\dialog-ok.png" />
+    <EmbeddedResource Include="res\images\elbow-empty.gif" />
+    <EmbeddedResource Include="res\images\elbow-end.gif" />
+    <EmbeddedResource Include="res\images\elbow-line.gif" />
+    <EmbeddedResource Include="res\images\elbow.gif" />
+    <EmbeddedResource Include="res\images\loading_24.gif" />
+    <EmbeddedResource Include="res\images\loading_25.gif" />
+    <EmbeddedResource Include="res\images\loading_32.gif" />
+    <EmbeddedResource Include="res\images\loading_32_2.gif" />
+    <EmbeddedResource Include="res\images\loading_42.gif" />
+    <EmbeddedResource Include="res\images\loading_50.gif" />
+    <EmbeddedResource Include="res\images\pagemenu-separator.gif" />
+    <EmbeddedResource Include="res\images\pagemenu_toolbar_background.gif" />
+    <EmbeddedResource Include="res\images\uncheck.gif" />
+    <EmbeddedResource Include="res\theme\access\box\corners-blue.gif" />
+    <EmbeddedResource Include="res\theme\access\box\corners.gif" />
+    <EmbeddedResource Include="res\theme\access\box\l-blue.gif" />
+    <EmbeddedResource Include="res\theme\access\box\l.gif" />
+    <EmbeddedResource Include="res\theme\access\box\r-blue.gif" />
+    <EmbeddedResource Include="res\theme\access\box\r.gif" />
+    <EmbeddedResource Include="res\theme\access\box\tb-blue.gif" />
+    <EmbeddedResource Include="res\theme\access\box\tb.gif" />
+    <EmbeddedResource Include="res\theme\access\button\arrow.gif" />
+    <EmbeddedResource Include="res\theme\access\button\btn.gif" />
+    <EmbeddedResource Include="res\theme\access\button\group-cs.gif" />
+    <EmbeddedResource Include="res\theme\access\button\group-lr.gif" />
+    <EmbeddedResource Include="res\theme\access\button\group-tb.gif" />
+    <EmbeddedResource Include="res\theme\access\button\s-arrow-b-noline.gif" />
+    <EmbeddedResource Include="res\theme\access\button\s-arrow-b.gif" />
+    <EmbeddedResource Include="res\theme\access\button\s-arrow-bo.gif" />
+    <EmbeddedResource Include="res\theme\access\button\s-arrow-noline.gif" />
+    <EmbeddedResource Include="res\theme\access\button\s-arrow-o.gif" />
+    <EmbeddedResource Include="res\theme\access\button\s-arrow.gif" />
+    <EmbeddedResource Include="res\theme\access\editor\tb-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\form\checkbox.gif" />
+    <EmbeddedResource Include="res\theme\access\form\clear-trigger.gif" />
+    <EmbeddedResource Include="res\theme\access\form\date-trigger.gif" />
+    <EmbeddedResource Include="res\theme\access\form\error-tip-corners.gif" />
+    <EmbeddedResource Include="res\theme\access\form\exclamation.gif" />
+    <EmbeddedResource Include="res\theme\access\form\radio.gif" />
+    <EmbeddedResource Include="res\theme\access\form\search-trigger.gif" />
+    <EmbeddedResource Include="res\theme\access\form\text-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\form\trigger-tpl.gif" />
+    <EmbeddedResource Include="res\theme\access\form\trigger.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\arrow-left-white.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\arrow-right-white.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\col-move-bottom.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\col-move-top.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\columns.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\dirty.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\done.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\drop-no.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\drop-yes.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\footer-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid-blue-hd.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid-blue-split.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid-hrow.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid-loading.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid-split.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid-vista-hd.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid3-hd-btn.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid3-hrow-over.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid3-hrow.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid3-special-col-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\grid3-special-col-sel-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\group-by.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\group-collapse.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\group-expand-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\group-expand.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\hd-pop.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\hmenu-asc.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\hmenu-desc.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\hmenu-lock.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\hmenu-lock.png" />
+    <EmbeddedResource Include="res\theme\access\grid\hmenu-unlock.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\hmenu-unlock.png" />
+    <EmbeddedResource Include="res\theme\access\grid\invalid_line.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\loading.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\mso-hd.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\nowait.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-first-disabled.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-first.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-last-disabled.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-last.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-next-disabled.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-next.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-prev-disabled.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\page-prev.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\pick-button.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\refresh.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\row-check-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\row-expand-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\row-over.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\row-sel.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\sort-hd.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\sort_asc.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\sort_desc.gif" />
+    <EmbeddedResource Include="res\theme\access\grid\wait.gif" />
+    <EmbeddedResource Include="res\theme\access\menu\checked.gif" />
+    <EmbeddedResource Include="res\theme\access\menu\group-checked.gif" />
+    <EmbeddedResource Include="res\theme\access\menu\item-over.gif" />
+    <EmbeddedResource Include="res\theme\access\menu\menu-parent.gif" />
+    <EmbeddedResource Include="res\theme\access\menu\menu.gif" />
+    <EmbeddedResource Include="res\theme\access\menu\unchecked.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\corners-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\left-right.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\light-hd.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\tool-sprite-tpl.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\tool-sprites.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\tools-sprites-trans.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\top-bottom.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\white-corners-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\white-left-right.gif" />
+    <EmbeddedResource Include="res\theme\access\panel\white-top-bottom.gif" />
+    <EmbeddedResource Include="res\theme\access\qtip\close.gif" />
+    <EmbeddedResource Include="res\theme\access\qtip\tip-anchor-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\qtip\tip-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\shared\glass-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\shared\hd-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\shared\left-btn.gif" />
+    <EmbeddedResource Include="res\theme\access\shared\right-btn.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\e-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\e-handle.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\ne-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\ne-handle.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\nw-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\nw-handle.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\s-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\s-handle.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\se-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\se-handle.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\square.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\sw-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\access\sizer\sw-handle.gif" />
+    <EmbeddedResource Include="res\theme\access\slider\slider-bg.png" />
+    <EmbeddedResource Include="res\theme\access\slider\slider-thumb.png" />
+    <EmbeddedResource Include="res\theme\access\slider\slider-v-bg.png" />
+    <EmbeddedResource Include="res\theme\access\slider\slider-v-thumb.png" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-btm-inactive-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-btm-inactive-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-btm-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-btm-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-close.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-strip-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tab-strip-btm-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\tabs-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\bg.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\btn-arrow-light.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\btn-arrow.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\btn-over-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\gray-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\more.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\s-arrow-bo.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\tb-btn-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\tb-xl-btn-sprite.gif" />
+    <EmbeddedResource Include="res\theme\access\toolbar\tb-xl-sep.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\arrows.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\drop-add.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\drop-between.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\drop-no.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\drop-over.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\drop-under.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\drop-yes.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-end-minus-nl.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-end-minus.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-end-plus-nl.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-end-plus.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-end.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-line.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-minus-nl.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-minus.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-plus-nl.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow-plus.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\elbow.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\folder-open.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\folder.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\leaf.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\loading.gif" />
+    <EmbeddedResource Include="res\theme\access\tree\s.gif" />
+    <EmbeddedResource Include="res\theme\access\window\icon-error.gif" />
+    <EmbeddedResource Include="res\theme\access\window\icon-info.gif" />
+    <EmbeddedResource Include="res\theme\access\window\icon-question.gif" />
+    <EmbeddedResource Include="res\theme\access\window\icon-warning.gif" />
+    <EmbeddedResource Include="res\theme\default\button\arrow.gif" />
+    <EmbeddedResource Include="res\theme\default\button\btn.gif" />
+    <EmbeddedResource Include="res\theme\default\button\group-cs.gif" />
+    <EmbeddedResource Include="res\theme\default\button\group-lr.gif" />
+    <EmbeddedResource Include="res\theme\default\button\group-tb.gif" />
+    <EmbeddedResource Include="res\theme\default\button\s-arrow-b-noline.gif" />
+    <EmbeddedResource Include="res\theme\default\button\s-arrow-b.gif" />
+    <EmbeddedResource Include="res\theme\default\button\s-arrow-bo.gif" />
+    <EmbeddedResource Include="res\theme\default\button\s-arrow-noline.gif" />
+    <EmbeddedResource Include="res\theme\default\button\s-arrow-o.gif" />
+    <EmbeddedResource Include="res\theme\default\button\s-arrow.gif" />
+    <EmbeddedResource Include="res\theme\default\dd\drop-add.gif" />
+    <EmbeddedResource Include="res\theme\default\dd\drop-no.gif" />
+    <EmbeddedResource Include="res\theme\default\dd\drop-yes.gif" />
+    <EmbeddedResource Include="res\theme\default\editor\tb-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\form\checkbox.gif" />
+    <EmbeddedResource Include="res\theme\default\form\clear-trigger.gif" />
+    <EmbeddedResource Include="res\theme\default\form\date-trigger.gif" />
+    <EmbeddedResource Include="res\theme\default\form\error-tip-corners.gif" />
+    <EmbeddedResource Include="res\theme\default\form\exclamation.gif" />
+    <EmbeddedResource Include="res\theme\default\form\radio.gif" />
+    <EmbeddedResource Include="res\theme\default\form\search-trigger.gif" />
+    <EmbeddedResource Include="res\theme\default\form\text-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\form\trigger-square.gif" />
+    <EmbeddedResource Include="res\theme\default\form\trigger-tpl.gif" />
+    <EmbeddedResource Include="res\theme\default\form\trigger.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\arrow-left-white.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\arrow-right-white.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\col-move-bottom.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\col-move-top.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\columns.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\dirty.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\done.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\drop-no.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\drop-yes.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\footer-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid-blue-hd.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid-blue-split.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid-hrow.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid-loading.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid-split.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid-vista-hd.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid3-hd-btn.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid3-hrow-over.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid3-hrow.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid3-rowheader.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\group-by.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\group-collapse.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\group-expand-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\group-expand.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\hd-pop.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\hmenu-asc.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\hmenu-desc.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\hmenu-lock.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\hmenu-lock.png" />
+    <EmbeddedResource Include="res\theme\default\grid\hmenu-unlock.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\hmenu-unlock.png" />
+    <EmbeddedResource Include="res\theme\default\grid\invalid_line.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\loading.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\mso-hd.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\nowait.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-first-disabled.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-first.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-last-disabled.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-last.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-next-disabled.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-next.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-prev-disabled.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\page-prev.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\pick-button.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\refresh-disabled.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\refresh.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\row-check-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\row-expand-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\row-over.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\row-sel.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\sort-hd.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\sort_asc.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\sort_desc.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\wait.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\mini-bottom.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\mini-left.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\mini-right.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\mini-top.gif" />
+    <EmbeddedResource Include="res\theme\default\menu\checked.gif" />
+    <EmbeddedResource Include="res\theme\default\menu\group-checked.gif" />
+    <EmbeddedResource Include="res\theme\default\menu\item-over.gif" />
+    <EmbeddedResource Include="res\theme\default\menu\menu-parent.gif" />
+    <EmbeddedResource Include="res\theme\default\menu\menu.gif" />
+    <EmbeddedResource Include="res\theme\default\menu\unchecked.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\blue-loading.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\calendar.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\glass-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\hd-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\large-loading.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\left-btn.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\loading-balls.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\right-btn.gif" />
+    <EmbeddedResource Include="res\theme\default\shared\warning.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\e-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\e-handle.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\ne-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\ne-handle.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\nw-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\nw-handle.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\s-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\s-handle.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\se-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\se-handle.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\square.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\sw-handle-dark.gif" />
+    <EmbeddedResource Include="res\theme\default\sizer\sw-handle.gif" />
+    <EmbeddedResource Include="res\theme\default\slider\slider-bg.png" />
+    <EmbeddedResource Include="res\theme\default\slider\slider-thumb.png" />
+    <EmbeddedResource Include="res\theme\default\slider\slider-v-bg.png" />
+    <EmbeddedResource Include="res\theme\default\slider\slider-v-thumb.png" />
+    <EmbeddedResource Include="res\theme\default\toolbar\more.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\arrows.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\drop-add.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\drop-between.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\drop-no.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\drop-over.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\drop-under.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\drop-yes.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-end-minus-nl.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-end-minus.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-end-plus-nl.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-end-plus.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-end.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-line.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-minus-nl.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-minus.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-plus-nl.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow-plus.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\elbow.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\folder-open.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\folder.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\leaf.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\loading.gif" />
+    <EmbeddedResource Include="res\theme\default\tree\s.gif" />
+    <EmbeddedResource Include="res\toolbox\Accordion.bmp" />
+    <EmbeddedResource Include="res\toolbox\Button.bmp" />
+    <EmbeddedResource Include="res\toolbox\Calendar.bmp" />
+    <EmbeddedResource Include="res\toolbox\CheckBox.bmp" />
+    <EmbeddedResource Include="res\toolbox\CheckBoxList.bmp" />
+    <EmbeddedResource Include="res\toolbox\ContentPanel.bmp" />
+    <EmbeddedResource Include="res\toolbox\ContentPlaceHolderConnector.bmp" />
+    <EmbeddedResource Include="res\toolbox\DatePicker.bmp" />
+    <EmbeddedResource Include="res\toolbox\DropDownList.bmp" />
+    <EmbeddedResource Include="res\toolbox\FlashObject.bmp" />
+    <EmbeddedResource Include="res\toolbox\Form.bmp" />
+    <EmbeddedResource Include="res\toolbox\FropDownList.bmp" />
+    <EmbeddedResource Include="res\toolbox\Grid.bmp" />
+    <EmbeddedResource Include="res\toolbox\GroupPanel.bmp" />
+    <EmbeddedResource Include="res\toolbox\HiddenField.bmp" />
+    <EmbeddedResource Include="res\toolbox\HtmlEditor.bmp" />
+    <EmbeddedResource Include="res\toolbox\HyperLink.bmp" />
+    <EmbeddedResource Include="res\toolbox\Image.bmp" />
+    <EmbeddedResource Include="res\toolbox\Label.bmp" />
+    <EmbeddedResource Include="res\toolbox\LinkButton.bmp" />
+    <EmbeddedResource Include="res\toolbox\ListBox.bmp" />
+    <EmbeddedResource Include="res\toolbox\Menu.bmp" />
+    <EmbeddedResource Include="res\toolbox\MenuButton.bmp" />
+    <EmbeddedResource Include="res\toolbox\MenuHyperLink.bmp" />
+    <EmbeddedResource Include="res\toolbox\MenuSeparator.bmp" />
+    <EmbeddedResource Include="res\toolbox\MenuText.bmp" />
+    <EmbeddedResource Include="res\toolbox\NumberBox.bmp" />
+    <EmbeddedResource Include="res\toolbox\PageLayout.bmp" />
+    <EmbeddedResource Include="res\toolbox\PageLoading.bmp" />
+    <EmbeddedResource Include="res\toolbox\PageManager.bmp" />
+    <EmbeddedResource Include="res\toolbox\Panel.bmp" />
+    <EmbeddedResource Include="res\toolbox\RadioButton.bmp" />
+    <EmbeddedResource Include="res\toolbox\RadioButtonList.bmp" />
+    <EmbeddedResource Include="res\toolbox\RegionPanel.bmp" />
+    <EmbeddedResource Include="res\toolbox\SimpleForm.bmp" />
+    <EmbeddedResource Include="res\toolbox\SplitButton.bmp" />
+    <EmbeddedResource Include="res\toolbox\Tab.bmp" />
+    <EmbeddedResource Include="res\toolbox\TabStrip.bmp" />
+    <EmbeddedResource Include="res\toolbox\TextArea.bmp" />
+    <EmbeddedResource Include="res\toolbox\TextBox.bmp" />
+    <EmbeddedResource Include="res\toolbox\Toolbar.bmp" />
+    <EmbeddedResource Include="res\toolbox\ToolbarFill.bmp" />
+    <EmbeddedResource Include="res\toolbox\ToolbarSeparator.bmp" />
+    <EmbeddedResource Include="res\toolbox\ToolbarText.bmp" />
+    <EmbeddedResource Include="res\toolbox\Tree.bmp" />
+    <EmbeddedResource Include="res\toolbox\TriggerBox.bmp" />
+    <EmbeddedResource Include="res\toolbox\TwinTriggerBox.bmp" />
+    <EmbeddedResource Include="res\toolbox\UserControlConnector.bmp" />
+    <EmbeddedResource Include="res\toolbox\Window.bmp" />
+    <EmbeddedResource Include="res\images\s.gif" />
+    <EmbeddedResource Include="res\theme\default\box\corners-blue.gif" />
+    <EmbeddedResource Include="res\theme\default\box\corners.gif" />
+    <EmbeddedResource Include="res\theme\default\box\l-blue.gif" />
+    <EmbeddedResource Include="res\theme\default\box\l.gif" />
+    <EmbeddedResource Include="res\theme\default\box\r-blue.gif" />
+    <EmbeddedResource Include="res\theme\default\box\r.gif" />
+    <EmbeddedResource Include="res\theme\default\box\tb-blue.gif" />
+    <EmbeddedResource Include="res\theme\default\box\tb.gif" />
+    <EmbeddedResource Include="res\theme\default\gradient-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid3-special-col-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\grid\grid3-special-col-sel-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\collapse.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\expand.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\gradient-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\ns-collapse.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\ns-expand.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\panel-close.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\panel-title-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\panel-title-light-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\stick.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\stuck.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\tab-close-on.gif" />
+    <EmbeddedResource Include="res\theme\default\layout\tab-close.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\corners-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\left-right.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\light-hd.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\tool-sprite-tpl.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\tool-sprites.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\tools-sprites-trans.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\top-bottom.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\top-bottom.png" />
+    <EmbeddedResource Include="res\theme\default\panel\white-corners-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\white-left-right.gif" />
+    <EmbeddedResource Include="res\theme\default\panel\white-top-bottom.gif" />
+    <EmbeddedResource Include="res\theme\default\progress\progress-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\qtip\bg.gif" />
+    <EmbeddedResource Include="res\theme\default\qtip\close.gif" />
+    <EmbeddedResource Include="res\theme\default\qtip\tip-anchor-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\qtip\tip-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\s.gif" />
+    <EmbeddedResource Include="res\theme\default\shadow-c.png" />
+    <EmbeddedResource Include="res\theme\default\shadow-lr.png" />
+    <EmbeddedResource Include="res\theme\default\shadow.png" />
+    <EmbeddedResource Include="res\theme\default\tabs\scroll-left.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\scroll-right.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\scroller-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-btm-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-btm-over-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-btm-over-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-btm-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-close.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-strip-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-strip-bg.png" />
+    <EmbeddedResource Include="res\theme\default\tabs\tab-strip-btm-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\tabs\tabs-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\bg.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\btn-arrow-light.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\btn-arrow.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\btn-over-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\gray-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\tb-bg.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\tb-btn-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\tb-xl-btn-sprite.gif" />
+    <EmbeddedResource Include="res\theme\default\toolbar\tb-xl-sep.gif" />
+    <EmbeddedResource Include="res\theme\default\window\icon-error.gif" />
+    <EmbeddedResource Include="res\theme\default\window\icon-info.gif" />
+    <EmbeddedResource Include="res\theme\default\window\icon-question.gif" />
+    <EmbeddedResource Include="res\theme\default\window\icon-warning.gif" />
+    <EmbeddedResource Include="res\theme\default\window\left-corners.png" />
+    <EmbeddedResource Include="res\theme\default\window\left-right.png" />
+    <EmbeddedResource Include="res\theme\default\window\right-corners.png" />
+    <EmbeddedResource Include="res\theme\default\window\top-bottom.png" />
+    <EmbeddedResource Include="res\theme\access\progress\progress-bg.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\scroll-left.gif" />
+    <EmbeddedResource Include="res\theme\access\tabs\scroll-right.gif" />
+    <EmbeddedResource Include="res\theme\access\window\left-corners.png" />
+    <EmbeddedResource Include="res\theme\access\window\left-right.png" />
+    <EmbeddedResource Include="res\theme\access\window\right-corners.png" />
+    <EmbeddedResource Include="res\theme\access\window\top-bottom.png" />
+    <EmbeddedResource Include="res\theme\gray\button\btn-arrow.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\btn-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\btn.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\group-cs.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\group-lr.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\group-tb.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\s-arrow-bo.gif" />
+    <EmbeddedResource Include="res\theme\gray\button\s-arrow-o.gif" />
+    <EmbeddedResource Include="res\theme\gray\form\clear-trigger.gif" />
+    <EmbeddedResource Include="res\theme\gray\form\date-trigger.gif" />
+    <EmbeddedResource Include="res\theme\gray\form\search-trigger.gif" />
+    <EmbeddedResource Include="res\theme\gray\form\trigger-square.gif" />
+    <EmbeddedResource Include="res\theme\gray\form\trigger.gif" />
+    <EmbeddedResource Include="res\theme\gray\gradient-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\col-move-bottom.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\col-move-top.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-hd-btn.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-hrow-over.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-hrow-over2.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-hrow.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-hrow2.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-special-col-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-special-col-bg2.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\grid3-special-col-sel-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\group-collapse.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\group-expand-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\group-expand.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\page-first.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\page-last.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\page-next.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\page-prev.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\refresh.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\row-expand-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\sort-hd.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\sort_asc.gif" />
+    <EmbeddedResource Include="res\theme\gray\grid\sort_desc.gif" />
+    <EmbeddedResource Include="res\theme\gray\menu\group-checked.gif" />
+    <EmbeddedResource Include="res\theme\gray\menu\item-over-disabled.gif" />
+    <EmbeddedResource Include="res\theme\gray\menu\item-over.gif" />
+    <EmbeddedResource Include="res\theme\gray\menu\menu-parent.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\corners-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\left-right.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\light-hd.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\tool-sprite-tpl.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\tool-sprites.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\tools-sprites-trans.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\top-bottom.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\top-bottom.png" />
+    <EmbeddedResource Include="res\theme\gray\panel\white-corners-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\white-left-right.gif" />
+    <EmbeddedResource Include="res\theme\gray\panel\white-top-bottom.gif" />
+    <EmbeddedResource Include="res\theme\gray\progress\progress-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\qtip\bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\qtip\close.gif" />
+    <EmbeddedResource Include="res\theme\gray\qtip\tip-anchor-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\qtip\tip-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\s.gif" />
+    <EmbeddedResource Include="res\theme\gray\shared\hd-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\shared\left-btn.gif" />
+    <EmbeddedResource Include="res\theme\gray\shared\right-btn.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\e-handle.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\ne-handle.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\nw-handle.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\s-handle.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\se-handle.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\square.gif" />
+    <EmbeddedResource Include="res\theme\gray\sizer\sw-handle.gif" />
+    <EmbeddedResource Include="res\theme\gray\slider\slider-thumb.png" />
+    <EmbeddedResource Include="res\theme\gray\slider\slider-v-thumb.png" />
+    <EmbeddedResource Include="res\theme\gray\tabs\scroll-left.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\scroll-right.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\scroller-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-btm-inactive-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-btm-inactive-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-btm-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-btm-over-left-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-btm-over-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-btm-right-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-close.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-strip-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-strip-bg.png" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tab-strip-btm-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\tabs\tabs-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\btn-arrow-light.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\btn-arrow.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\btn-over-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\gray-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\more.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\tb-bg.gif" />
+    <EmbeddedResource Include="res\theme\gray\toolbar\tb-btn-sprite.gif" />
+    <EmbeddedResource Include="res\theme\gray\tree\arrows.gif" />
+    <EmbeddedResource Include="res\theme\gray\tree\elbow-end-minus-nl.gif" />
+    <EmbeddedResource Include="res\theme\gray\tree\elbow-end-minus.gif" />
+    <EmbeddedResource Include="res\theme\gray\tree\elbow-end-plus-nl.gif" />
+    <EmbeddedResource Include="res\theme\gray\tree\elbow-end-plus.gif" />
+    <EmbeddedResource Include="res\theme\gray\window\icon-error.gif" />
+    <EmbeddedResource Include="res\theme\gray\window\icon-info.gif" />
+    <EmbeddedResource Include="res\theme\gray\window\icon-question.gif" />
+    <EmbeddedResource Include="res\theme\gray\window\icon-warning.gif" />
+    <EmbeddedResource Include="res\theme\gray\window\left-corners.png" />
+    <EmbeddedResource Include="res\theme\gray\window\left-right.png" />
+    <EmbeddedResource Include="res\theme\gray\window\right-corners.png" />
+    <EmbeddedResource Include="res\theme\gray\window\top-bottom.png" />
+    <EmbeddedResource Include="res\toolbox\FileUpload.bmp" />
+    <Content Include="res\css\ux\ColumnHeaderGroup.css" />
+    <Content Include="res\css\ux\FileUploadField.css" />
+    <EmbeddedResource Include="res\images\bullet_cross.png" />
+    <EmbeddedResource Include="res\images\checked.gif" />
+    <EmbeddedResource Include="res\images\tick.png" />
+    <EmbeddedResource Include="res\images\unchecked.gif" />
+    <EmbeddedResource Include="res\images\checked_disabled.gif" />
+    <EmbeddedResource Include="res\images\unchecked_disabled.gif" />
+    <Content Include="Web.config.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax_properties.txt" />
+    <EmbeddedResource Include="js\X\X.js" />
+    <None Include="js\lib\ext-all.js" />
+    <EmbeddedResource Include="js\lang\ext-lang-en.js" />
+    <EmbeddedResource Include="js\lang\ext-lang-zh_CN.js" />
+    <EmbeddedResource Include="js\lang\ext-lang-zh_TW.js" />
+    <None Include="js\X\X.ajax.js" />
+    <None Include="js\X\extender.js" />
+    <None Include="js\X\X.util.js" />
+    <None Include="js\X\X.wnd.js" />
+    <EmbeddedResource Include="js\lang\ext-lang-pt_BR.js" />
+    <EmbeddedResource Include="js\lang\ext-lang-tr.js" />
+    <None Include="js\lib\ext-all-debug.js" />
+    <Content Include="js\lang\extaspnet\ext-lang-en.js" />
+    <Content Include="js\lang\extaspnet\ext-lang-pt_BR.js" />
+    <Content Include="js\lang\extaspnet\ext-lang-zh_CN.js" />
+    <Content Include="js\lang\extaspnet\ext-lang-zh_TW.js" />
+    <Content Include="js\lang\extjs\ext-lang-en.js" />
+    <Content Include="js\lang\extjs\ext-lang-pt_BR.js" />
+    <Content Include="js\lang\extjs\ext-lang-tr.js" />
+    <Content Include="js\lang\extjs\ext-lang-zh_CN.js" />
+    <Content Include="js\lang\extjs\ext-lang-zh_TW.js" />
+    <Content Include="js\ux\Ext.ux.FormViewport.js" />
+    <Content Include="js\ux\Ext.ux.layout.RowLayout.js" />
+    <Content Include="js\ux\Ext.ux.SimplePagingToolbar.js" />
+    <EmbeddedResource Include="js\ux\ux.js" />
+    <Content Include="js\ux\Ext.ux.TabCloseMenu.js" />
+    <Content Include="js\ux\Ext.ux.AspNetProxy.js" />
+    <Content Include="js\X\X.simulateTree.js" />
+    <Content Include="lib\licenses\extjs.txt" />
+    <Content Include="lib\licenses\JSBeautify.txt" />
+    <Content Include="lib\licenses\yuicompressor.txt" />
+    <EmbeddedResource Include="res\css\blue.css" />
+    <EmbeddedResource Include="res\css\access.css" />
+    <Content Include="res\css\ux\box-panel-big-header.css" />
+    <Content Include="res\css\ux\CheckBox-disable.css" />
+    <Content Include="res\css\ux\ExtAspNet.css" />
+    <Content Include="res\css\ux\FormViewport.css" />
+    <Content Include="res\css\ux\PageLoading.css" />
+    <Content Include="res\css\ux\ux.css" />
+    <Content Include="release_history.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
